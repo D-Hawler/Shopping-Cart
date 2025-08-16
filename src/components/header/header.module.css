@@ -1,0 +1,26 @@
+@import 'src/varible.css';
+
+:global(header) {
+    height: var(--header-height);
+
+    padding: 10px 20px;
+
+    background-color: var(--header-color);
+    color: var(--main-color);
+
+    display: flex;
+    align-items: center;
+}
+
+.logoContainer {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+}
