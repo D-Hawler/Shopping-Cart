@@ -4,6 +4,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+  font-family: 'Inter', sans-serif;
 }
 
 html, body {
@@ -24,4 +26,16 @@ html, body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  padding: 10px 20px;
+
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+
+  cursor: pointer; 
+}
+button:active {
+  transform: scale(0.95);
 }

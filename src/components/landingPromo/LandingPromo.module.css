@@ -1,0 +1,26 @@
+@import 'src/varible.css';
+
+:global(section) {
+    padding: 10px 40px;
+
+    flex: 80%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+:global(section > h1) {
+    font-size: 2rem;
+}
+
+:global(section > p) {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.startButton {
+    font-weight: 900;
+
+    background-color: var(--header-color);
+    color: var(--main-color);
+}
