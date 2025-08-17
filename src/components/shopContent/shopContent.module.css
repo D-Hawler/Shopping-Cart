@@ -1,0 +1,7 @@
+.shopContent {
+    padding: 10px 40px;
+
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}

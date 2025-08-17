@@ -4,11 +4,9 @@ import Button from '../button/button';
 import style from './landingPromo.module.css';
 import './landingPromo.module.css';
 
-const start = <Link to={'store'}>Start shopping</Link>;
-
 function LandingPromo() {
     return (
-        <section>
+        <section className={style.landingPromo}>
             <h1>Fake Store</h1>
             <p>
                 Fake Store is a convenient online store with a wide range of products to suit every taste.
@@ -16,7 +14,12 @@ function LandingPromo() {
                 Shop easily, quickly, and hassle-free!
             </p>
             <p><strong>Quick. Convenient. No frills.</strong></p>
-            <Button className={style.startButton} description={start} />
+            <Link to={'store'}>
+                <Button
+                    className={style.startButton}
+                    description='Start shopping'
+                />
+            </Link>
         </section>
     );
 };

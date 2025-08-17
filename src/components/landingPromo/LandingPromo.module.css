@@ -1,6 +1,6 @@
 @import 'src/varible.css';
 
-:global(section) {
+.landingPromo {
     padding: 10px 40px;
 
     flex: 80%;
@@ -9,11 +9,11 @@
     flex-direction: column;
 }
 
-:global(section > h1) {
+.landingPromo :global(h1) {
     font-size: 2rem;
 }
 
-:global(section > p) {
+.landingPromo :global(p) {
     font-size: 1.5rem;
     text-align: justify;
 }

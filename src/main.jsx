@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App.jsx';
 import LandingPromo from './components/landingPromo/landingPromo.jsx';
+import ShopContent from './components/shopContent/shopContent.jsx';
 
 import './index.css';
 
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { index: true, element: <LandingPromo />},
-      { path: 'store', element: ''},
+      { path: 'store', element: <ShopContent />},
     ],
   },
 ]);

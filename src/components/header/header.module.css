@@ -1,6 +1,7 @@
 @import 'src/varible.css';
 
 :global(header) {
+    width: 100%;
     height: var(--header-height);
 
     padding: 10px 20px;
@@ -8,9 +9,20 @@
     background-color: var(--header-color);
     color: var(--main-color);
 
+    position: fixed;
+    top: 0;
+    left: 0;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.placeholder {
+    width: 100%;
+    height: var(--header-height);
+
+    padding-top: var(--header-height);
 }
 
 .logoContainer {
