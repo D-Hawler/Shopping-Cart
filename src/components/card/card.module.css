@@ -1,15 +1,9 @@
-/* :global(article *) {
-    border: 1px solid red;
-} */
-
-
-
-:global(article) {
+.card {
     display: flex;
     flex-direction: column;
 }
 
-:global(article > div) {
+.card > div {
     padding: 10px 20px;
     
     display: flex;
@@ -17,32 +11,32 @@
     justify-content: space-between;
 }
 
-:global(article > div > img) {
+.card > div > img {
     width: 200px;
     height: 300px;
 }
 
-:global(article > div > div) {
+.card > div > div {
     display: flex;
     gap: 10px;
     flex-direction: column;
     justify-content: space-between;
 }
 
-:global(article > div > div > div:nth-of-type(1)) {
+.card > div > div > div:nth-of-type(1) {
     display: flex;
     gap: 20px;
     flex-direction: column;
 }
 
-:global(article > div > div > div:nth-of-type(2)) {
+.card > div > div > div:nth-of-type(2) {
     margin-bottom: 20px;
 
     display: flex;
     justify-content: space-between;
 }
 
-:global(article > div > div > div:nth-of-type(2) > div) {
+.card > div > div > div:nth-of-type(2) > div {
     text-align: center;
 
     display: flex;

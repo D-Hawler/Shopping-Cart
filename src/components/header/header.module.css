@@ -1,39 +1,39 @@
-@import 'src/varible.css';
+@import "../../varible.css";
 
 :global(header) {
-    width: 100%;
-    height: var(--header-height);
+  width: 100%;
+  height: var(--header-height);
 
-    padding: 10px 20px;
+  padding: 10px 20px;
 
-    background-color: var(--header-color);
-    color: var(--main-color);
+  background-color: var(--header-color);
+  color: var(--main-color);
 
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .placeholder {
-    width: 100%;
-    height: var(--header-height);
+  width: 100%;
+  height: var(--header-height);
 
-    padding-top: var(--header-height);
+  padding-top: var(--header-height);
 }
 
 .logoContainer {
-    display: flex;
-    gap: 15px;
-    align-items: center;
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 .logo {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 
-    border-radius: 50%;
+  border-radius: 50%;
 }

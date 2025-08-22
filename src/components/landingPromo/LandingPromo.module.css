@@ -1,26 +1,26 @@
-@import 'src/varible.css';
+@import "../../varible.css";
 
 .landingPromo {
-    padding: 10px 40px;
+  padding: 20px 40px;
 
-    flex: 80%;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
+  flex: 80%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
 
 .landingPromo :global(h1) {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .landingPromo :global(p) {
-    font-size: 1.5rem;
-    text-align: justify;
+  font-size: 1.5rem;
+  text-align: justify;
 }
 
 .startButton {
-    font-weight: 900;
+  font-weight: 900;
 
-    background-color: var(--header-color);
-    color: var(--main-color);
+  background-color: var(--header-color);
+  color: var(--main-color);
 }

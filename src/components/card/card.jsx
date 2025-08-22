@@ -1,10 +1,10 @@
 import Button from "../button/button";
 
-import './card.module.css';
+import style from './card.module.css';
 
-function Card({ title, image, description, rating, price  }) {
+function Card({ id, title, image, description, rating, price, onClick }) {
     return (
-        <article>
+        <article className={style.card}>
             <div>
                 <img src={image} alt={`Product image: ${title}`} />
                 <div>
@@ -16,7 +16,7 @@ function Card({ title, image, description, rating, price  }) {
                         <p>Rating: {rating?.rate ?? 'N/A'}</p>
                         <div>
                             <p>Price: ${price}</p>
-                            <Button description={'Add to cart'} />
+                            <Button description={'Add to cart'} onClick={() => onClick(id)} />
                         </div>
                     </div>
                 </div>

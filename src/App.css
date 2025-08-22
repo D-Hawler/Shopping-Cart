@@ -1,17 +1,7 @@
 main {
-    width: 100%;
+  min-height: 0;
 
-    padding: 10px 20px;
-
-    display: flex;
-    justify-content: space-between;
-}
-
-.scrollableContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-
-    overflow-y: auto;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
 }

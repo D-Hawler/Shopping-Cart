@@ -1,0 +1,30 @@
+@import "../../varible.css";
+
+.placeholder {
+  width: 100%;
+  height: calc(100vh - var(--header-height) - var(--header-height));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loaderRing {
+  width: 48px;
+  height: 48px;
+
+  border: 5px solid var(--loader-color);
+  border-top: 5px solid var(--header-color);
+  border-radius: 50%;
+
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

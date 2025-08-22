@@ -1,0 +1,111 @@
+@import '../../varible.css';
+
+.cart {
+  height: 100%;
+  padding: 0 40px;
+
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.empty {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart > div:nth-of-type(1) > p {
+  margin: 20px 40px;
+
+  text-align: center;
+}
+
+.cart > div:nth-of-type(1) {
+  flex: 65%;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.cart > div:nth-of-type(1) > article {
+  display: flex;
+  gap: 40px;
+}
+
+.cart > div:nth-of-type(1) > article:first-of-type {
+  margin-top: 40px;
+}
+
+.cart > div:nth-of-type(1) > article:last-of-type {
+  margin-bottom: 40px;
+}
+
+.cart > div:nth-of-type(1) > article > img {
+  width: 200px;
+  height: 300px;
+}
+
+.cart > div:nth-of-type(1) > article > div {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart > div:nth-of-type(1) > article > div > div {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: end;
+}
+
+.cart > div:nth-of-type(1) > article > div > div > div:nth-of-type(1),
+.cart > div:nth-of-type(1) > article > div > div > div:nth-of-type(2) {
+  display: flex;
+  gap: 20px;
+}
+
+.cart > div:nth-of-type(2) {
+  max-height: calc(100% - 40px);
+  padding: 20px 40px;
+  margin: 20px 0;
+
+  background-color: var(--cart-color);
+  border-radius: 20px;
+}
+
+.cart > div:nth-of-type(2) > form {
+  padding: 10px 20px;
+
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.cart > div:nth-of-type(2) > form > div {
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+}
+
+.cart > div:nth-of-type(2) > form > div > input {
+  padding: 5px 10px;
+
+  background-color: var(--main-color);
+  border-radius: 10px;
+}
+
+.cart > div:nth-of-type(2) > form > div > textarea {
+  width: 200px;
+  height: 100px;
+  padding: 5px 10px;
+
+  resize: none;
+
+  background-color: var(--main-color);
+  border-radius: 10px;
+}

@@ -4,9 +4,8 @@
 
     --header-color: rgb(54, 46, 35);
     --nav-color: rgb(58, 60, 38);
-
-    --d: #6D6C3C;
-    --a: #A9AC5D;
+    --cart-color: rgb(109, 108, 60);
+    --loader-color: rgb(169, 172, 93);
 
     --header-height: 80px;
 }

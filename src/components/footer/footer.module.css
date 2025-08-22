@@ -1,13 +1,13 @@
-@import 'src/varible.css';
+@import "../../varible.css";
 
 :global(footer) {
-    width: 100%;
-    height: calc(var(--header-height) / 2);
+  width: 100%;
+  height: calc(var(--header-height) / 2);
 
-    padding: 10px 20px;
+  padding: 10px 20px;
 
-    background-color: var(--header-color);
-    color: var(--main-color);
+  background-color: var(--header-color);
+  color: var(--main-color);
 
-    align-content: end;
+  align-content: end;
 }
