@@ -1,8 +1,22 @@
+import { MouseEventHandler } from "react";
+
 import Button from "../button/button";
 
 import style from './card.module.css';
 
-function Card({ id, title, image, description, rating, price, onClick }) {
+interface Cardprops {
+    id: string;
+    title: string;
+    image: string;
+    description: string;
+    rating?: {
+        rate: number;
+    };
+    price: number;
+    onClick: (id: string) => void;
+};
+
+function Card({ id, title, image, description, rating, price, onClick }: Cardprops) {
     return (
         <article className={style.card}>
             <div>

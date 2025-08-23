@@ -1,17 +1,40 @@
+import { Dispatch, SetStateAction } from 'react';
+
 import useShoppingCart from '../../context/hook/useShoppingCart';
 import useData from '../../context/hook/useData';
 
-import Button from '../button/button';
+import Button from '../../components/button/button';
 
 import style from './cart.module.css';
-import shopContent from '../shopContent/shopContent.module.css';
+import shopContent from '../../pages/shopContent/shopContent.module.css';
 import './cart.module.css';
 
-function Cart() {
-  const { shoppingCart, setShoppingCart } = useShoppingCart();
-  const { data } = useData();
+interface shoppingCartprops {
+  id: string;
+  count: number;
+};
 
-  const handleAdd = (id) => {
+interface dataProps {
+  id: string;
+  title: string;
+  image: string;
+  description: string;
+  rating?: {
+    rate: number;
+  };
+  price: number;
+};
+
+function Cart() {
+  const { shoppingCart, setShoppingCart } = useShoppingCart() as {
+    shoppingCart: shoppingCartprops[];
+    setShoppingCart: Dispatch<SetStateAction<shoppingCartprops[]>>;
+  };
+  const { data } = useData() as {
+    data: dataProps[];
+  };
+
+  const handleAdd = (id: string) => {
     setShoppingCart((prev) =>
       prev.map((item) =>
         item.id === id ? { ...item, count: item.count + 1 } : item
@@ -19,7 +42,7 @@ function Cart() {
     );
   };
 
-  const handleRemove = (id) => {
+  const handleRemove = (id: string) => {
     setShoppingCart((prev) =>
       prev.map((item) =>
         item.id === id ? { ...item, count: item.count - 1 } : item

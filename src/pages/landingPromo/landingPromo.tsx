@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Button from '../button/button';
+import Button from '../../components/button/button';
 
 import style from './landingPromo.module.css';
 import './landingPromo.module.css';
